@@ -1,17 +1,17 @@
 {
-	"description": "{{ repository.description }}",
+	"description": "isolating an issue with architect queues",
 	"devDependencies": {
-		"eslint": "latest",
-		"eslint-config-prettier": "latest"
+		"@architect/architect": "latest",
+		"@architect/functions": "latest",
+		"@architect/sandbox": "latest",
+		"@enhance/arc-plugin-enhance": "latest"
 	},
-	"homepage": "{{URL}}",
 	"license": "UNLICENSED",
-	"name": "{{ repository.name }}",
+	"name": "architect-queues-test",
 	"private": true,
 	"scripts": {
-		"kill": "npx kill-port 3000",
-		"start": "npx serve ./public",
-		"test": "npx cowsay no tests... yet!"
+		"deploy": "arc deploy --production",
+		"start": "arc sandbox"
 	},
 	"type": "module"
 }

@@ -1,1 +1,0 @@
-// globanal types go here
