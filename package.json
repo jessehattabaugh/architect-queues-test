@@ -1,0 +1,17 @@
+{
+	"description": "{{ repository.description }}",
+	"devDependencies": {
+		"eslint": "latest",
+		"eslint-config-prettier": "latest"
+	},
+	"homepage": "{{URL}}",
+	"license": "UNLICENSED",
+	"name": "{{ repository.name }}",
+	"private": true,
+	"scripts": {
+		"kill": "npx kill-port 3000",
+		"start": "npx serve ./public",
+		"test": "npx cowsay no tests... yet!"
+	},
+	"type": "module"
+}
